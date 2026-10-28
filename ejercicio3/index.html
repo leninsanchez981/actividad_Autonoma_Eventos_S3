@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <main class="contenedor">
+        <h1>Mi lista de tareas</h1>
+        <p>Organiza tus actividades de forma sencilla.</p>
+
+        <form id="formTarea">
+            <label for="tarea">Nueva tarea</label>
+
+            <div class="grupo-entrada">
+                <input
+                    type="text"
+                    id="tarea"
+                    placeholder="Ej. Estudiar JavaScript"
+                    autocomplete="off"
+                >
+
+                <button type="submit">Agregar</button>
+            </div>
+
+            <p class="ayuda">Pulsa Escape para limpiar el campo.</p>
+        </form>
+
+        <h2>Mis tareas</h2>
+
+        <ul id="listaTareas" aria-label="Lista de tareas"></ul>
+
+        <p id="mensaje" role="status" aria-live="polite"></p>
+    </main>
+
+</body>
+</html>

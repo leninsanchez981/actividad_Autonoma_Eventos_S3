@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comentario con límite</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Publicar comentario</h1>
+    <p>Escribe tu comentario. El límite es de 280 caracteres.</p>
+
+    <form id="formComentario">
+      <label for="comentario">Tu comentario</label>
+
+      <textarea
+        id="comentario"
+        maxlength="280"
+        rows="6"
+        placeholder="Escribe aquí tu comentario..."
+        required
+      ></textarea>
+
+      <div class="informacion">
+        <span id="contador">0/280</span>
+        <span>Máximo 280 caracteres</span>
+      </div>
+
+      <button id="btnPublicar" type="submit" disabled>
+        Publicar
+      </button>
+
+      <p id="mensaje" role="status"></p>
+    </form>
+  </main>
+</body>
+</html>

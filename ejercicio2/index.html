@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseña segura</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <main class="contenedor">
+        <h1>Crear cuenta</h1>
+        <p>Completa el formulario para registrarte.</p>
+
+        <form id="formRegistro">
+            <label for="usuario">Nombre de usuario</label>
+            <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Escribe tu usuario"
+                required
+            >
+
+            <label for="contrasena">Contraseña</label>
+
+            <div class="grupo-contrasena">
+                <input
+                    type="password"
+                    id="contrasena"
+                    name="contrasena"
+                    placeholder="Escribe tu contraseña"
+                    required
+                >
+
+                <button type="button" id="btnMostrar">
+                    👁 Mostrar
+                </button>
+            </div>
+
+            <h3>Requisitos de la contraseña</h3>
+
+            <ul class="requisitos">
+                <li id="reqLongitud">Mínimo 8 caracteres</li>
+                <li id="reqMayuscula">Una letra mayúscula</li>
+                <li id="reqNumero">Un número</li>
+            </ul>
+
+            <button type="submit" id="btnCrear">
+                Crear cuenta
+            </button>
+
+            <p id="mensaje" role="status" aria-live="polite"></p>
+        </form>
+    </main>
+
+</body>
+</html>

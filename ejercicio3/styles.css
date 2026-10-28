@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #1f2937;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 620px;
+    padding: 28px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px #17255418;
+}
+
+h1 {
+    margin-top: 0;
+    color: #1d4ed8;
+}
+
+h2 {
+    margin-top: 28px;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin: 16px 0 8px;
+    font-weight: bold;
+}
+
+.grupo-entrada {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 11px;
+    border: 1px solid #9ca3af;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.ayuda {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+#listaTareas {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+#listaTareas li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid #dbe3ef;
+    border-radius: 8px;
+}
+
+.texto-tarea {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+#listaTareas li.completada .texto-tarea {
+    text-decoration: line-through;
+    color: #6b7280;
+}
+
+button.completar {
+    background: #15803d;
+}
+
+button.eliminar {
+    background: #b91c1c;
+}
+
+#mensaje {
+    min-height: 1.4em;
+    color: #15803d;
+    font-weight: bold;
+}
